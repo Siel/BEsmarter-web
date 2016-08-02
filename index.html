@@ -183,7 +183,20 @@
         <div class="col-md-12">
           <div class="info-row">
             <h1 class="text-center x-large">Scientific Structure</h1>asd
-            <img src="img/gallery/scientific-structure.png" class="img-responsive">
+            <img src="img/gallery/scientific-structure.png" width="100%" border="0" usemap="#imap_64" >
+            <!--<img src="http://d33wubrfki0l68.cloudfront.net/b86da9a0ec7982149dbce6440a0d385c254c84c2/d5e6e/img/gallery/scientific-structure.png" width="1128" border="0">-->
+            <map id="imap_64" name="imap_64" >
+              <area shape="rect" coords="555,20,752,91" alt="Andrés Ramírez Hassan" title="Andrés Ramírez Hassan" href="#andres">
+              <area shape="rect" coords="558,113,749,182" alt="Santiago Montoya" title="Santiago Montoya" href="#santiago">
+              <area shape="rect" coords="537,206,639,275" alt="Mateo garciano" title="Mateo garciano" href="#mateo">
+              <area shape="rect" coords="667,206,771,274" alt="Rosember Guerra" title="Rosember Guerra" href="#rosember">
+              <area shape="rect" coords="342,299,445,370" alt="Paula Almonacid" title="Paula Almonacid" href="#paula">
+              <area shape="rect" coords="470,299,573,369" alt="Ulises Cárcamo" title="Ulises Cárcamo" href="#ulises">
+              <area shape="rect" coords="602,300,705,369" alt="Manuel Correa" title="Manuel Correa" href="#manuel">
+              <area shape="rect" coords="733,300,834,371" alt="Edward Londoño" title="Edward Londoño" href="#edward">
+              <area shape="rect" coords="862,299,965,371" alt="Alejandro Puerta" title="Alejandro Puerta" href="#alejandro">
+              <area shape="rect" coords="992,299,1095,369" alt="Jim Sanchez" title="Jim Sanchez" href="#jim">
+            </map>
               
           </div>
         </div>
@@ -485,6 +498,12 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/imageMapResizer.min.js"></script>
+    <script type="text/javascript">
+
+    $('map').imageMapResize();
+
+    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
     <!-- Include slider -->
@@ -496,9 +515,12 @@
     <script src="libs/Bootstrap-Image-Gallery-3.1.1/js/bootstrap-image-gallery.min.js"></script>
     <script src="js/reduce-menu.js"></script>
     <script src="js/match-height.js"></script>
+    
+    
 
     <script type="text/javascript">
       $(document).ready(function() {
+        //$('map').rwdImageMaps();
         $('.responsive-calendar').responsiveCalendar({
           time: '2013-05',
           events: {
