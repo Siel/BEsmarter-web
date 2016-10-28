@@ -44,10 +44,25 @@
               <li class="dropdown active"><a href="teaching.html">Teaching</a></li>
               <li class="dropdown"><a href="software.html">Software</a></li>
               <li class="dropdown"><a href="social.html">Social Responsibility</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-search"></span></a>
+                <ul class="dropdown-menu" style="margin-left: 0px;padding-left: 10px;padding-right: 10px;width: 220px;">
+                  <li>
+                    <div class="form-inline">
+                      <div class="input-group">
+                        <input type="text" class="form-control" id="searchInput">
+                        <span class="input-group-btn">
+                          <button class="btn btn-default" type="submit" onclick="search()">Search</button>
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
               <!--<li class="dropdown"><a href="donate.html">Donate</a></li>-->
             </ul>
           </div><!-- /.navbar-collapse -->
-          
+
         </div>
       </nav>
       <div class="breadcrumbs-container">
@@ -71,10 +86,10 @@
 
           <object data="files/pdf/Bayesian Econometrics for Everybody.pdf" type="application/pdf" width="100%" height="100%" style="height: 800px;">
           </object>
-         
+
         </div>
       </div>
-    </div>     
+    </div>
   </div>
 </section>
 
@@ -91,7 +106,7 @@
               <li ><a href="teaching.html">Teaching</a></li>
               <li ><a href="software.html">Software</a></li>
               <li ><a href="social.html">Social Responsibility</a></li>
-              <li ><a href="donate.html">Donate</a></li>
+              <!--<li ><a href="donate.html">Donate</a></li>-->
             </ul>
           </div>
         </div>
@@ -104,11 +119,10 @@
               </div>
               <div class="col-md-6">
                 <p class="social">
-                  <a href="/"><span class="fa fa-facebook"></span></a>
-                  <a href="/"><span class="fa fa-twitter"></span></a>
-                  <a href="/"><span class="fa fa-youtube"></span></a>
-                  <a href="/"><span class="fa fa-linkedin"></span></a>
-                  <a href="/"><span class="fa fa-pinterest"></span></a>
+                  <a href="https://www.facebook.com/besmarterteam/"><span class="fa fa-facebook"></span></a>
+                  <a href="https://twitter.com/BesmarterT"><span class="fa fa-twitter"></span></a>
+                  <a href="https://plus.google.com/112974159470005238714"><span class="fa fa-google-plus"></span></a>
+                  <a href="https://github.com/besmarter"><span class="fa fa-github"></span></a>
                 </p>
               </div>
             </div>
@@ -151,6 +165,16 @@
         </div>
       </div>
     </div>
+    <script>
+    function search() {
+      var baseUrl="https://www.google.com.co/search?q=site%3A"
+      var site= "ciemto.medicinaudea.co"
+      var keywords = encodeURIComponent(document.getElementById("searchInput").value);
+      window.location = baseUrl+site+"+"+keywords;
+
+
+    }
+    </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -181,8 +205,8 @@
           time: '2013-05',
           events: {
             "2013-05-30": {"number": 5, "badgeClass": "background-turquoise", "url": "http://w3widgets.com/responsive-slider"},
-            "2013-05-26": {"number": 1, "badgeClass": "background-turquoise", "url": "http://w3widgets.com"}, 
-            "2013-05-03": {"number": 1, "badgeClass": "background-pomegranate"}, 
+            "2013-05-26": {"number": 1, "badgeClass": "background-turquoise", "url": "http://w3widgets.com"},
+            "2013-05-03": {"number": 1, "badgeClass": "background-pomegranate"},
             "2013-05-12": {}}
         });
 
