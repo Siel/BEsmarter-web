@@ -20,6 +20,150 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+    <style>
+
+
+
+.news {
+    background: #fff;
+	position: relative;
+	overflow: hidden;
+	z-index:1;
+ 	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+	border: 1px solid #eaeaea;
+}
+
+.news .img-figure {
+	position: relative;
+}
+
+.news .img-figure img {
+	position: relative;
+	overflow: hidden;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.news:hover .img-figure img {
+	-webkit-transform: scale(1.10);
+	-moz-transform: scale(1.10);
+	-ms-transform: scale(1.10);
+	-o-transform: scale(1.10);
+	transform: scale(1.10);
+}
+
+.news .title {
+	/*padding: 29px 30px;*/
+	padding: 45px 30px;
+	position: absolute;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.news .title h1 {
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 19px;
+/*	color: #3D6AA2;*/
+	text-align: center;
+}
+
+.news:hover .title  {
+	margin-top: -90px;
+	background: #fff;
+}
+
+.news  p.description {
+	position: relative;
+	font-weight: normal;
+	line-height: 22px;
+	opacity: 0;
+
+	text-align: center;
+
+	padding: 15px 30px 0px 30px;
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.news:hover p.description  {
+	opacity: 1;
+}
+
+p.more {
+	text-align: center;
+}
+
+.more a {
+    position: relative;
+    font-size: 13px;
+    margin-top: 30px;
+    display: block;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    display: inline-block;
+    color: #28998b;
+}
+
+.more a:after {
+    content: '';
+    width: 18px;
+    height: 1px;
+
+    position: absolute;
+    left: 55px;
+    top: 9px;
+
+    background: #28998b;
+
+    vertical-align: middle;
+    margin-left: 10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+.news:hover a:after {
+    width: 30px;
+}
+
+.cat {
+	background: #a0bc9f;
+	color: #fff;
+	text-transform: uppercase;
+	position: absolute;
+	left: 0;
+	top: 20px;
+	z-index: 1;
+	padding: 3px 15px;
+}
+    </style>
   </head>
   <body class="background-clouds">
     <div id="nav-wrapper" class="background-white color-black">
@@ -74,13 +218,32 @@
       </ol>
     </div>
   </div>
-  <img src="img/Under-Construction1.jpg" class="img-responsive">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="news">
+            <div class="img-figure">
+              <div class="cat">Software</div>
+              <img src="img/Social-Responsibility.png" class="img-responsive">
+            </div>
 
+            <div class="title">
+              <a href="https://besmarter-team.shinyapps.io/CrimeMedellinAPP/"><h1>Crime Medellin APP</h1></a>
+            </div>
+            <p class="description">
+              School of criminals: neighbors, opportunities or punishment? This is a research about the  socioeconomic characteristics of the neighborhoods where criminals live. The objective is to find structural solutions to the criminality in Medellin (Colombia).
+            </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 
     <footer class="background-midnight-blue color-white">
       <div class="container">
-      <div class="row">
-          <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-4">
             <h3>Menu</h3>
             <ul class="nav-footer">
               <li class="active"><a href="index.html">Home</a></li>
@@ -90,6 +253,54 @@
               <li ><a href="social.html">Social Responsibility</a></li>
               <!--<li ><a href="donate.html">Donate</a></li>-->
             </ul>
+          </div>
+          <div class="col-md-4">
+            <!-- Begin MailChimp Signup Form-->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            <div id="mc_embed_signup">
+            <form action="//besmarter-team.us14.list-manage.com/subscribe/post?u=2da567d81db41c9f8fb0798a4&amp;id=6e76690785" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                  <h2 style="font-size: 24px;">Subscribe to our mailing list</h2>
+              <table style=" border-spacing: 4px;border-collapse: separate;">
+                <tr>
+                  <div class="mc-field-group">
+                  <td><label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label></td>
+                  <td><input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"></td>
+                  </div>
+                </tr>
+                <tr>
+                  <div class="mc-field-group">
+                  <td><label for="mce-NAME">Name </label></td>
+                  <td><input type="text" value="" name="NAME" class="" id="mce-NAME"></td>
+                  </div>
+                </tr>
+                <tr>
+                  <div class="mc-field-group">
+                  <td><label for="mce-INSTITUTIO">Institution  <span class="asterisk">*</span>
+                </label></td>
+                  <td><input type="text" value="" name="INSTITUTIO" class="required" id="mce-INSTITUTIO"></td>
+                  </div>
+                </tr>
+                <tr>
+                  <div class="mc-field-group">
+                  <td><label for="mce-COUNTRY">Country  <span class="asterisk">*</span>
+                </label></td>
+                  <td><input type="text" value="" name="COUNTRY" class="required" id="mce-COUNTRY"></td>
+                  </div>
+                </tr>
+              </table>
+
+            	<div id="mce-responses" class="clear">
+            		<div class="response" id="mce-error-response" style="display:none"></div>
+            		<div class="response" id="mce-success-response" style="display:none"></div>
+            	</div>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2da567d81db41c9f8fb0798a4_6e76690785" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='NAME';ftypes[1]='text';fnames[2]='INSTITUTIO';ftypes[2]='text';fnames[3]='COUNTRY';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->
           </div>
         </div>
         <div class="row">
